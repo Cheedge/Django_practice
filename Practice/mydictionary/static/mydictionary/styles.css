@@ -1,0 +1,19 @@
+h1{
+	font-size: 90px;
+	background-color: transparent;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	color: rgb(65,105,255);
+	text-align: center;
+}
+div{
+	font-size: 30px;
+	font-family: sans-serif, sans-serif;
+	text-align: center;
+}
+
+#div1{
+	font-size: 60px;
+	font-family: Times;
+	text-align: center;
+	color: rgb(154,206,50);
+}

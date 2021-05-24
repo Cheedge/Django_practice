@@ -1,0 +1,19 @@
+{% extends "mydictionary/layout.html" %}
+{% block body %}
+	<h1>Add unknown word</h1>
+	<div id='div1'>
+		<form action="{% url 'mydict:addword' %}" method="post" autocomplete="off">
+			{% csrf_token %}
+			{{ form }}
+			<input type="submit">
+			<!--
+			<input type="text" name="vocab" id="vocab">
+			<input type="text" name="meaning" id="meaning">
+			<button>remember it</button>
+			--!>
+		</form>
+		<a href="{% url 'mydict:listwords' %}">Words List</a>
+	</div>
+{% endblock body %}
+
+

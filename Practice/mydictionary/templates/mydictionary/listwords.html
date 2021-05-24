@@ -1,0 +1,21 @@
+{% extends "mydictionary/layout.html" %}
+{% block body %}
+	<!--
+	<ul>
+		<li>{{ vocabs }}</li> <li>{{ meanings }}</li>
+	</ul>
+	--!>
+	{{ diction }}
+	<table>
+		<tr>
+			<th>words</th>
+			<th>meanings</th>
+		</tr>
+		{% for i in diction %}
+		<tr>
+			<th>{{i}}</th>
+		</tr>
+		{% endfor %}
+	</table>
+	<a href="{% url "mydict:addword" %}">Add Word</a>
+{% endblock body %}
