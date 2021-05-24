@@ -35,6 +35,7 @@ def addWord(request):
 
     return render(request, "mydictionary/addword.html", {'form':vocabForm()})
 def listWords(request):
+    # use session
     if 'pairs' not in request.session:
         request.session['pairs']=dict()
     #return render(request, "mydictionary/listwords.html", {'vocabs': vocabs, 'meanings':meanings, 'Num':len(vocabs) })
